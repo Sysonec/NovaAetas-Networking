@@ -1,0 +1,779 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+      integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+      crossorigin="anonymous"
+    />
+    <!-- Slick -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css"
+      integrity="sha256-3h45mwconzsKjTUULjY+EoEkoRhXcOIU4l5YAw2tSOU="
+      crossorigin="anonymous"
+    />
+    <!-- Slick Theme -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css"
+      integrity="sha256-etrwgFLGpqD4oNAFW08ZH9Bzif5ByXK2lXNHKy7LQGo="
+      crossorigin="anonymous"
+    />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+     <!-- AOS Library -->
+     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+    <title>NovaAetas Networking</title>
+  </head>
+  <body id="blog">
+  <!-- LOADER -->
+  <div class="loader">
+    <img src="img/logo-cloud.png" alt="logo-img" class="img-fluid loader-logo">
+  </div>
+
+  <!-- LOADER WRAP -->
+  <div class="loader-wrap">
+
+  <!-- BACK TO TOP BTN -->
+  <div id="btn-top">
+      <a href="#blog" class="text-decoration-none smooth"
+        ><i class="fas fa-chevron-up"></i
+      ></a>
+    </div>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+        <div class="container">
+          <ul class="navbar-nav d-block d-lg-none">
+            <li class="nav-item nav-info">
+              <button
+                type="button"
+                class="info-link collapsed"
+                data-toggle="collapse"
+                data-target="#nav-info"
+              >
+                <div class="circles">
+                  <div class="circle mt-1"></div>
+                  <div class="circle mt-1"></div>
+                  <div class="circle mt-1"></div>
+                </div>
+              </button>
+            </li>
+          </ul>
+          <div class="card card-info position-absolute collapse" id="nav-info">
+            <div class="card-body bg-light">
+              <div class="nav-details font-weight-bold d-flex flex-column justify-content-center align-items-start text-center">
+                <div class="nav-detail mb-3">
+                  <i class="fas fa-tty purple-color mr-3"></i>
+                  <span class="nav-detail-text">
+                      +44 895 765 6543
+                  </span>
+                </div>
+                <div class="nav-detail mb-3">
+                  <i class="far fa-clock purple-color mr-3"></i>
+                  <span class="nav-detail-text">
+                      08:00AM - 6:00PM
+                  </span>
+                </div>
+                <div class="nav-detail">
+                  <i class="fas fa-map-marker-alt purple-color mr-3"></i>
+                  <span class="nav-detail-text">
+                      17 Main St,
+                      London, <br>CE12 G94
+                  </span>
+                </div>
+                <button class="btn btn-outline-dark mt-3 text-capitalize">
+                  Have a question?
+                </button>
+              </div>
+            </div>
+          </div>
+          <a href="#blog" class="navbar-brand smooth">
+            <img src="img/logo.png" alt="logo" class="logo" />
+          </a>
+          <ul class="navbar-nav d-block d-lg-none ml-auto mr-3">
+            <li class="nav-item nav-search">
+              <button
+                type="button"
+                class="search-link collapsed"
+                data-toggle="collapse"
+                data-target="#nav-search"
+              >
+                <i class="fas fa-search"></i>
+              </button>
+            </li>
+          </ul>
+          <div
+            class="input-group bg-light collapse group-collapse"
+            id="nav-search"
+          >
+            <input
+              type="text"
+              class="form-control collapse-search form-control-outline-0 bg-light border-0 font-weight-bold"
+              placeholder="Search"
+            />
+            <div class="input-group-append">
+              <span class="input-group-text bg-light border-0"
+                ><a href="#" class="text-decoration-none"
+                  ><i
+                    class="fas fa-search collapse-search-icon text-muted mr-1"
+                  ></i></a
+              ></span>
+            </div>
+          </div>
+          <button
+            class="navbar-toggler collapsed"
+            data-toggle="collapse"
+            data-target="#navbarCollapse"
+          >
+            <span class="toggler-icon">
+              <div class="line"></div>
+              <div class="line"></div>
+              <div class="line"></div>
+            </span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav ml-auto font-weight-bold">
+              <li class="nav-item mr-3 px-3">
+                <a href="index.html" class="nav-link">Home</a>
+              </li>
+              <li class="nav-item mr-3 px-3">
+                <a href="about.html" class="nav-link">About</a>
+              </li>
+              <li class="nav-item mr-3 px-3">
+                <a href="services.html" class="nav-link">Services</a>
+              </li>
+              <li class="nav-item mr-3 px-3 active-link">
+                <a href="#blog" class="nav-link text-dark smooth">Blog</a>
+              </li>
+              <li class="nav-item mr-3 px-3">
+                <a href="contact.html" class="nav-link">Contact</a>
+              </li>
+              <li class="nav-item ml-5 px-3 nav-item-search">
+                <a
+                  href="#"
+                  class="nav-link"
+                  data-toggle="modal"
+                  data-target="#searchModal"
+                  ><i class="fas fa-search"></i
+                ></a>
+              </li>
+              <li class="nav-item px-3 nav-item-info">
+                <a
+                  href="#"
+                  class="nav-link collapsed"
+                  data-toggle="collapse"
+                  data-target="#nav-item-content"
+                  ><div class="line"></div>
+                  <div class="line"></div>
+                  <div class="line"></div></a>
+                  <div class="card card-item-info collapse position-fixed text-center bg-light px-2 py-1" id="nav-item-content">
+                    <div class="card-item-heading mt-4 mb-4">
+                        <a href="#" class="content-icon text-decoration-none text-dark float-left mt-1">
+                            <div class="line"></div>
+                            <div class="line"></div>
+                        </a>
+                        <h2 class="font-weight-bold">Contact Us</h2>
+                    </div>
+                      <div class="card-body card-item-body">
+                        <div class="card-item-gallery mb-5 pb-3">
+                          <div class="card-item-slider">
+                              <div class="card-item-image">
+                                  <img src="img/company-ppl.jpg" alt="card-item-image" class="img-fluid">
+                                </div>
+                                <div class="card-item-image">
+                                  <img src="img/server1.jpg" alt="card-item-image" class="img-fluid">
+                                </div>
+                                <div class="card-item-image">
+                                  <img src="img/earth1.jpg" alt="card-item-image" class="img-fluid">
+                                </div>
+                          </div>
+                        </div>
+                        <div class="nav-details card-item-details font-weight-bold d-flex flex-column justify-content-start align-items-center text-center">
+                            <div class="nav-detail mb-3 mr-2">
+                              <i class="fas fa-tty purple-color mr-3"></i>
+                              <span class="nav-detail-text">
+                                  +44 895 765 6543
+                              </span>
+                            </div>
+                            <div class="nav-detail mb-3">
+                              <i class="far fa-clock purple-color mr-3"></i>
+                              <span class="nav-detail-text">
+                                  08:00AM - 6:00PM
+                              </span>
+                            </div>
+                            <div class="nav-detail ml-1 mb-2">
+                              <i class="fas fa-map-marker-alt purple-color mr-3"></i>
+                              <span class="nav-detail-text">
+                                  17 Main St,
+                                  London, <br>CE12 G94
+                              </span>
+                            </div>
+                            <button class="btn btn-outline-dark mt-3 text-capitalize">
+                              Have a question?
+                            </button>
+                          </div>
+                          <div class="card-item-social d-flex justify-content-center">
+                              <a href="http://facebook.com" class="pr-4 text-decoration-none"
+                                ><i class="fab fa-facebook-f"></i
+                              ></a>
+                              <a href="http://instagram.com" class="pr-4 text-decoration-none"
+                                ><i class="fab fa-instagram"></i
+                              ></a>
+                              <a href="http://twitter.com" class="pr-4 text-decoration-none"
+                                ><i class="fab fa-twitter"></i
+                              ></a>
+                              <a href="http://linkedin.com" class="text-decoration-none"
+                                ><i class="fab fa-linkedin-in"></i
+                              ></a>
+                            </div>
+                        </div>
+                    </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+    <!-- HEADER -->
+    <header id="header-about" class="py-4">
+      <div class="container">
+        <div class="row py-4 text-center text-white">
+          <div class="col">
+            <h3 class="display-4">Blog</h3>
+            <p class="lead">Everything about networking and technology!</p>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- BOTTOM BAR -->
+    <div id="bottom-bar">
+      <ol
+        class="breadcrumb m-0  justify-content-center align-items-center bar-bg"
+      >
+        <li class="breadcrumb-item">
+          <a
+            href="index.html"
+            class="text-decoration-none text-muted font-weight-bold text-uppercase"
+            >Home</a
+          >
+        </li>
+        <li class="breadcrumb-item">
+          <a
+            href="about.html"
+            class="text-decoration-none font-weight-bold text-uppercase"
+            >Blog</a
+          >
+        </li>
+      </ol>
+    </div>
+
+    <!-- BLOG SECTION -->
+    <section id="blog" class="py-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 text-left">
+            <div class="blog-post py-5 mb-2 mt-4">
+              <span class="blog-type pr-2"
+                ><a href="blog-post.html" class="text-decoration-none"
+                  >SysAdmin</a
+                ></span
+              >
+              <span class="blog-comments text-muted border-left pl-3 pr-3"
+                ><a href="blog-post.html" class="text-decoration-none"
+                  ><i class="far fa-comment mr-2"></i>14</a
+                ></span
+              >
+              <span class="blog-author text-muted border-left pl-3 pr-3"
+                >by<a href="blog-post.html" class="pl-2 text-decoration-none"
+                  >Sara Williams</a
+                ></span
+              >
+              <span class="blog-date text-muted border-left pl-3"
+                ><i class="far fa-calendar-alt mr-2"></i>July 30, 2019</span
+              >
+              <h3 class="blog-title text-capitalize pt-3">
+                <a href="blog-post.html" class="text-decoration-none">Everything about server rooms</a>
+              </h3>
+              <div class="blog-img-wrap">
+                  <a href="blog-post.html"><img
+                    src="img/servers.jpg"
+                    alt="blog-img"
+                    class="img-fluid blog-img"
+                  /></a>
+              </div>
+              <p class="text-muted mt-2">
+                Everyone is not surprised by the overall need of servers and such technologies within business environments by increased use of technologies used to increase efficiency, and therefore, company income.
+              </p>
+              <div class="blog-btn">
+                <a href="blog-post.html" class="btn btn-dark mt-1">Read More</a>
+              </div>
+            </div>
+
+            <div class="blog-post py-5 mb-2 mt-4" data-aos="zoom-out" data-aos-duration="600">
+                <span class="blog-type pr-2"
+                ><a href="blog-post.html" class="text-decoration-none"
+                  >Technology</a
+                ></span
+              >
+              <span class="blog-comments text-muted border-left pl-3 pr-3"
+                ><a href="blog-post.html" class="text-decoration-none"
+                  ><i class="far fa-comment mr-2"></i>21</a
+                ></span
+              >
+              <span class="blog-author text-muted border-left pl-3 pr-3"
+                >by<a href="blog-post.html" class="pl-2 text-decoration-none"
+                  >Sara Williams</a
+                ></span
+              >
+              <span class="blog-date text-muted border-left pl-3"
+                ><i class="far fa-calendar-alt mr-2"></i>August 21, 2019</span
+              >
+              <h3 class="blog-title text-capitalize pt-3">
+                <a href="blog-post.html" class="text-decoration-none">Top 10 wireless technologies</a>
+              </h3>
+              <div class="blog-img-wrap" data-aos="zoom-in" data-aos-duration="500">
+                  <a href="blog-post.html"><img
+                    src="img/aerial-lights.jpg"
+                    alt="blog-img"
+                    class="img-fluid blog-img"
+                  /></a>
+              </div>
+              <p class="text-muted mt-2">
+                Modern networking technology is rapidly evolving and getting more convenient, meaning wireless networking is getting even more developed in terms of conveniency! These are the newest wireless technologies that are at the top of the networking game.
+              </p>
+              <div class="blog-btn">
+                <a href="blog-post.html" class="btn btn-dark mt-1">Read More</a>
+              </div>
+            </div>
+
+            <div class="blog-post py-5 mb-2 mt-4" data-aos="zoom-out" data-aos-duration="600">
+                <span class="blog-type pr-2" 
+                ><a href="blog-post.html" class="text-decoration-none"
+                  >Networking</a
+                ></span
+              >
+              <span class="blog-comments text-muted border-left pl-3 pr-3"
+                ><a href="blog-post.html" class="text-decoration-none"
+                  ><i class="far fa-comment mr-2"></i>11</a
+                ></span
+              >
+              <span class="blog-author text-muted border-left pl-3 pr-3"
+                >by<a href="blog-post.html" class="pl-2 text-decoration-none"
+                  >Sara Williams</a
+                ></span
+              >
+              <span class="blog-date text-muted border-left pl-3"
+                ><i class="far fa-calendar-alt mr-2"></i>September 2, 2019</span
+              >
+              <h3 class="blog-title text-capitalize pt-3">
+                <a href="blog-post.html" class="text-decoration-none">Ecological Networking</a>
+              </h3>
+              <div class="blog-img-wrap" data-aos="zoom-in" data-aos-duration="500">
+                  <a href="blog-post.html"><img
+                    src="img/earth2.jpg"
+                    alt="blog-img"
+                    class="img-fluid blog-img"
+                  /></a>
+              </div>
+              <p class="text-muted mt-2">
+                We live on the Earth and we will definitely do so for hundreds of years so we need to take care of our planet - That's why ecological networking has become more popular. Learn how you can save the environment by going "eco" style!
+              </p>
+              <div class="blog-btn">
+                <a href="blog-post.html" class="btn btn-dark mt-1">Read More</a>
+              </div>
+            </div>
+            <div class="blog-pages" data-aos="fade-down">
+                  <ul class="pagination d-flex justify-content-center align-items-center">
+                      <li class="page-item active">
+                          <a class="page-link font-weight-bold" href="blog-post.html">1</a>
+                      </li>
+                      <li class="page-item">
+                          <a class="page-link font-weight-bold" href="blog-post.html">2</a>
+                      </li>
+                      <li class="page-item">
+                          <a class="page-link font-weight-bold" href="blog-post.html">3</a>
+                      </li>
+                      <li class="page-item">
+                          <a class="page-link font-weight-bold" href="blog-post.html"><i class="fas fa-arrow-right"></i></a>
+                      </li>
+                  </ul>
+            </div>
+          </div>
+
+          <div class="col-lg-4 py-5 mb-2 mt-3">
+              <div class="sidebar text-left pl-5">
+                <div class="row">
+                <div class="col-sm-12 col-lg-12">
+                    <div class="side-item">
+                        <div class="blog-author text-center">
+                            <div class="card border-0">
+                              <div class="card-body bg-light">
+                                <a href="blog-post.html"><img
+                                  src="img/person1.jpg"
+                                  alt="author-img"
+                                  class="img-fluid rounded-circle author-img"
+                                /></a>
+                                <a href="blog-post.html" class="text-decoration-none"><h3 class="py-2">Sara Williams</h3></a>
+                                <p class="text-muted">
+                                  A true network engineer passionate about her job, technology enthusiast, sharing important news straight from the networking world.
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="side-item">
+                        <div class="side-search input-group mt-5">
+                            <input
+                              type="text"
+                              class="form-control form-control-outline-0 bg-light border-0"
+                              placeholder="Search"
+                            />
+                            <div class="input-group-append">
+                              <span class="input-group-text bg-light border-0"
+                                ><a href="#" class="text-decoration-none"
+                                  ><i class="fas fa-search text-muted mr-1"></i></a
+                              ></span>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-12" data-aos="zoom-in" data-aos-duration="800">
+                    <div class="side-item">
+                        <div class="categories">
+                           <h3 class="side-title">Categories</h3>
+                            <ul class="category-list list-unstyled p-5">
+                              <li class="category-item mb-2 position-relative">
+                                <a
+                                  href="blog-post.html"
+                                  class="d-flex justify-content-between align-items-center text-decoration-none"
+                                  ><span class="position-absolute">──</span> Networking <span class="badge">(10)</span></a
+                                >
+                              </li>
+                              <li class="category-item mb-2">
+                                <a
+                                  href="blog-post.html"
+                                  class="d-flex justify-content-between align-items-center text-decoration-none"
+                                  >SysAdmin <span class="badge">(15)</span></a
+                                >
+                              </li>
+                              <li class="category-item mb-2">
+                                <a
+                                  href="blog-post.html"
+                                  class="d-flex justify-content-between align-items-center text-decoration-none"
+                                  >Business <span class="badge">(8)</span></a
+                                >
+                              </li>
+                              <li class="category-item">
+                                <a
+                                  href="blog-post.html"
+                                  class="d-flex justify-content-between align-items-center text-decoration-none"
+                                  >Technology <span class="badge">(21)</span></a
+                                >
+                              </li>
+                            </ul>
+                          </div>
+                    </div>
+                    <div class="side-item">
+                        <div class="popular-posts">
+                            <h3 class="side-title">Popular Posts</h3>
+                            <div class="post p-4">
+                              <a href="blog-post.html">
+                                <div class="img-wrap" data-aos="zoom-out" data-aos-duration="600">
+                                  <img
+                                    src="img/earth2.jpg"
+                                    alt="post-img"
+                                    class="img-fluid post-img"
+                                  />
+                                </div>
+                              </a>
+                              <a
+                                href="blog-post.html"
+                                class="text-capitalize text-decoration-none"
+                                >Ecological Networking</a
+                              >
+                              <span class="post-date text-muted d-block"
+                                >July 30, 2019</span
+                              >
+                            </div>
+                            <div class="post p-4">
+                              <a href="blog-post.html">
+                                <div class="img-wrap" data-aos="zoom-out" data-aos-duration="600">
+                                  <img
+                                    src="img/aerial-lights.jpg"
+                                    alt="post-img"
+                                    class="img-fluid post-img"
+                                  />
+                                </div>
+                              </a>
+                              <a
+                                href="blog-post.html"
+                                class="text-capitalize text-decoration-none"
+                                >Top 10 wireless technologies</a
+                              >
+                              <span class="post-date text-muted d-block"
+                                >August 21, 2019</span
+                              >
+                            </div>
+                          </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-12" data-aos="zoom-in" data-aos-duration="800">
+                    <div class="side-item">
+                        <div class="popular-tags my-5">
+                            <h3 class="side-title">Popular Tags</h3>
+                            <div class="tags p-4">
+                              <a href="blog-post.html" class="tag text-decoration-none pr-2 text-muted"
+                                >Networking</a
+                              >
+                              <a href="blog-post.html" class="tag text-decoration-none pr-2 text-muted"
+                                >Technology</a
+                              >
+                              <a href="blog-post.html" class="tag text-decoration-none pr-2 text-muted"
+                                >Security</a
+                              >
+                              <a href="blog-post.html" class="tag text-decoration-none pr-2 text-muted"
+                                >Testing</a
+                              >
+                              <a href="blog-post.html" class="tag text-decoration-none pr-2 text-muted"
+                                >Business</a
+                              >
+                              <a href="blog-post.html" class="tag text-decoration-none text-muted"
+                                >SysAdmin</a
+                              >
+                            </div>
+                          </div>
+                    </div>
+                    <div class="side-item">
+                        <div class="archive">
+                            <h3 class="side-title">Archive</h3>
+                            <ul class="archive-dates p-4">
+                              <a href="blog-post.html" class="text-decoration-none"
+                                ><li
+                                  class="archive-date pb-2 ml-2 list-unstyled align-middle"
+                                >
+                                  <span
+                                    ><i class="fas fa-circle purple-color mr-2"></i
+                                  ></span>
+                                  July 2019
+                                </li></a
+                              >
+                              <a href="blog-post.html" class="text-decoration-none"
+                                ><li
+                                  class="archive-date pb-2 ml-2 list-unstyled align-middle"
+                                >
+                                  <span
+                                    ><i class="fas fa-circle purple-color mr-2"></i
+                                  ></span>
+                                  June 2019
+                                </li></a
+                              >
+                              <a href="blog-post.html" class="text-decoration-none"
+                                ><li
+                                  class="archive-date pb-2 ml-2 list-unstyled align-middle"
+                                >
+                                  <span
+                                    ><i class="fas fa-circle purple-color mr-2"></i
+                                  ></span>
+                                  May 2019
+                                </li></a
+                              >
+                              <a href="blog-post.html" class="text-decoration-none"
+                                ><li class="archive-date ml-2 list-unstyled align-middle">
+                                  <span
+                                    ><i class="fas fa-circle purple-color mr-2"></i
+                                  ></span>
+                                  April 2019
+                                </li></a
+                              >
+                            </ul>
+                          </div>
+                        </div>
+                    </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+          </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer id="main-footer" class="text-center p-3">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-3 col-sm-6 p-2 text-left" data-aos="fade-up" data-aos-duration="600">
+              <div class="intro d-flex flex-inline">
+                <img
+                  src="img/logo.png"
+                  alt="logo-img"
+                  class="img-fluid logo-footer"
+                />
+              </div>
+              <p class="py-2">
+                To gain contracts with biggest Internet Service Providers we
+                must stay ahead with current trends and endlessly transforming
+                technologies.
+              </p>
+            </div>
+            <div class="col-lg-3 col-sm-6 py-2 text-left" data-aos="fade-down" data-aos-duration="600">
+              <h4 class="py-2">Contact Us</h4>
+              <div class="d-flex flex-inline">
+                <span class="icon"><i class="fas fa-tty pr-3"></i></span>
+                <p>+44 895 765 6543</p>
+              </div>
+              <div class="d-flex flex-inline">
+                <span class="icon"><i class="far fa-envelope pr-3"></i></span>
+                <p>info@novanetworks.org</p>
+              </div>
+              <div class="d-flex flex-inline">
+                <span class="icon"
+                  ><i class="fas fa-map-marker-alt pr-3"></i
+                ></span>
+                <p>17 Main Street, <br />London, CE12 G94</p>
+              </div>
+              <div class="d-flex flex-inline icons">
+                <a href="http://facebook.com" class="pr-3 text-decoration-none"
+                  ><i class="fab fa-facebook-f"></i
+                ></a>
+                <a href="http://instagram.com" class="pr-3 text-decoration-none"
+                  ><i class="fab fa-instagram"></i
+                ></a>
+                <a href="http://twitter.com" class="pr-3 text-decoration-none"
+                  ><i class="fab fa-twitter"></i
+                ></a>
+                <a href="http://linkedin.com" class="text-decoration-none"
+                  ><i class="fab fa-linkedin-in"></i
+                ></a>
+              </div>
+            </div>
+            <div class="col-lg-3 col-sm-6 py-2 text-left" data-aos="fade-up" data-aos-duration="600">
+              <h4 class="py-2">Recent News</h4>
+              <div class="news mb-3">
+                <a href="blog.html" class="blog-link text-decoration-none">
+                  <p class="my-0">Protect Your Data</p>
+                </a>
+                <small><span class="text-muted">August 14, 2019</span></small>
+              </div>
+              <div class="news">
+                <a href="blog.html" class="blog-link text-decoration-none">
+                  <p class="my-0">Your Personal Guide on WiFi Networks</p>
+                </a>
+                <small><span class="text-muted">August 25, 2019</span></small>
+              </div>
+            </div>
+            <div class="col-lg-3 col-sm-6 py-2 text-left" data-aos="fade-down" data-aos-duration="600">
+              <h4 class="py-2">Quick Links</h4>
+              <ul class="list-unstyled">
+                <li class="mb-2">
+                  <a class="text-decoration-none quick-link" href="index.html"
+                    >Home</a
+                  >
+                </li>
+                <li class="mb-2">
+                  <a class="text-decoration-none quick-link" href="about.html"
+                    >About</a
+                  >
+                </li>
+                <li class="mb-2">
+                  <a
+                    class="text-decoration-none quick-link"
+                    href="services.html"
+                    >Services</a
+                  >
+                </li>
+                <li class="mb-2">
+                  <a class="text-decoration-none quick-link" href="blog.html"
+                    >Blog</a
+                  >
+                </li>
+                <li class="mb-2">
+                  <a class="text-decoration-none quick-link" href="blog.html"
+                    >Post</a
+                  >
+                </li>
+                <li class="mb-2">
+                  <a class="text-decoration-none quick-link" href="contact.html"
+                    >Contact</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
+      
+    <!-- Copyright -->
+    <div class="bottom-info text-white text-center p-4">
+      <span>Copyright &copy; All Rights Reserved</span>
+      <span id="year"></span>
+    </div>
+
+
+     <!-- SEARCH MODAL -->
+     <div class="modal fade expand" id="searchModal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-body">
+              <button class="close search-close" data-dismiss="modal">
+                <span
+                  ><i class="far fa-times-circle text-white"></i
+                ></span>
+              </button>
+              <form class="form justify-content-center align-items-center">
+                <div class="input-group">
+                    <input
+                    type="text"
+                    class="form-control text-white form-control-lg form-control-outline-0"
+                    placeholder="Search..."
+                  />
+                  <div class="input-group-append">
+                      <span class="input-group-text mb-3"
+                        ><a href="#"><i class="fas fa-search text-white"></i
+                          ></a></span>
+                    </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Slick Slider -->
+    <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.js"
+    integrity="sha256-zUQGihTEkA4nkrgfbbAM1f3pxvnWiznBND+TuJoUv3M="
+    crossorigin="anonymous"
+  ></script>
+
+   <!-- AOS Library -->
+   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+ 
+    <!-- Custom JavaScript -->
+  <script src="js/app.js"></script>
+  </body>
+</html>

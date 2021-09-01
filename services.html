@@ -1,0 +1,855 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+      integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+      crossorigin="anonymous"
+    />
+     <!-- Slick -->
+     <link
+     rel="stylesheet"
+     href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css"
+     integrity="sha256-3h45mwconzsKjTUULjY+EoEkoRhXcOIU4l5YAw2tSOU="
+     crossorigin="anonymous"
+   />
+   <!-- Slick Theme -->
+   <link
+     rel="stylesheet"
+     href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css"
+     integrity="sha256-etrwgFLGpqD4oNAFW08ZH9Bzif5ByXK2lXNHKy7LQGo="
+     crossorigin="anonymous"
+   />
+   <!-- Bootstrap CSS -->
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+   <link rel="stylesheet" href="css/style.css" />
+   <!-- AOS Library -->
+   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+   <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+    <title>NovaAetas Networking</title>
+  </head>
+  <body id="services">
+  <!-- LOADER -->
+  <div class="loader">
+    <img src="img/logo-cloud.png" alt="logo-img" class="img-fluid loader-logo">
+  </div>
+
+  <!-- LOADER WRAP -->
+  <div class="loader-wrap">
+
+    <!-- BACK TO TOP BTN -->
+    <div id="btn-top">
+      <a href="#services" class="text-decoration-none smooth"
+        ><i class="fas fa-chevron-up"></i
+      ></a>
+    </div>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+        <div class="container">
+          <ul class="navbar-nav d-block d-lg-none">
+            <li class="nav-item nav-info">
+              <button
+                type="button"
+                class="info-link collapsed"
+                data-toggle="collapse"
+                data-target="#nav-info"
+              >
+                <div class="circles">
+                  <div class="circle mt-1"></div>
+                  <div class="circle mt-1"></div>
+                  <div class="circle mt-1"></div>
+                </div>
+              </button>
+            </li>
+          </ul>
+          <div class="card card-info position-absolute collapse" id="nav-info">
+            <div class="card-body bg-light">
+              <div class="nav-details font-weight-bold d-flex flex-column justify-content-center align-items-start text-center">
+                <div class="nav-detail mb-3">
+                  <i class="fas fa-tty purple-color mr-3"></i>
+                  <span class="nav-detail-text">
+                      +44 895 765 6543
+                  </span>
+                </div>
+                <div class="nav-detail mb-3">
+                  <i class="far fa-clock purple-color mr-3"></i>
+                  <span class="nav-detail-text">
+                      08:00AM - 6:00PM
+                  </span>
+                </div>
+                <div class="nav-detail">
+                  <i class="fas fa-map-marker-alt purple-color mr-3"></i>
+                  <span class="nav-detail-text">
+                      17 Main St,
+                      London, <br>CE12 G94
+                  </span>
+                </div>
+                <button class="btn btn-outline-dark mt-3 text-capitalize">
+                  Have a question?
+                </button>
+              </div>
+            </div>
+          </div>
+          <a href="#services" class="navbar-brand smooth">
+            <img src="img/logo.png" alt="logo" class="logo" />
+          </a>
+          <ul class="navbar-nav d-block d-lg-none ml-auto mr-3">
+            <li class="nav-item nav-search">
+              <button
+                type="button"
+                class="search-link collapsed"
+                data-toggle="collapse"
+                data-target="#nav-search"
+              >
+                <i class="fas fa-search"></i>
+              </button>
+            </li>
+          </ul>
+          <div
+            class="input-group bg-light collapse group-collapse"
+            id="nav-search"
+          >
+            <input
+              type="text"
+              class="form-control collapse-search form-control-outline-0 bg-light border-0 font-weight-bold"
+              placeholder="Search"
+            />
+            <div class="input-group-append">
+              <span class="input-group-text bg-light border-0"
+                ><a href="#" class="text-decoration-none"
+                  ><i
+                    class="fas fa-search collapse-search-icon text-muted mr-1"
+                  ></i></a
+              ></span>
+            </div>
+          </div>
+          <button
+            class="navbar-toggler collapsed"
+            data-toggle="collapse"
+            data-target="#navbarCollapse"
+          >
+            <span class="toggler-icon">
+              <div class="line"></div>
+              <div class="line"></div>
+              <div class="line"></div>
+            </span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav ml-auto font-weight-bold">
+              <li class="nav-item mr-3 px-3">
+                <a href="index.html" class="nav-link">Home</a>
+              </li>
+              <li class="nav-item mr-3 px-3">
+                <a href="about.html" class="nav-link">About</a>
+              </li>
+              <li class="nav-item mr-3 px-3 active-link">
+                <a href="services.html" class="nav-link text-dark smooth">Services</a>
+              </li>
+              <li class="nav-item mr-3 px-3">
+                <a href="blog.html" class="nav-link">Blog</a>
+              </li>
+              <li class="nav-item mr-3 px-3">
+                <a href="contact.html" class="nav-link">Contact</a>
+              </li>
+              <li class="nav-item ml-5 px-3 nav-item-search">
+                <a
+                  href="#"
+                  class="nav-link"
+                  data-toggle="modal"
+                  data-target="#searchModal"
+                  ><i class="fas fa-search"></i
+                ></a>
+              </li>
+              <li class="nav-item px-3 nav-item-info">
+                <a
+                  href="#"
+                  class="nav-link collapsed"
+                  data-toggle="collapse"
+                  data-target="#nav-item-content"
+                  ><div class="line"></div>
+                  <div class="line"></div>
+                  <div class="line"></div></a>
+                  <div class="card card-item-info collapse position-fixed text-center bg-light px-2 py-1" id="nav-item-content">
+                    <div class="card-item-heading mt-4 mb-4">
+                        <a href="#" class="content-icon text-decoration-none text-dark float-left mt-1">
+                            <div class="line"></div>
+                            <div class="line"></div>
+                        </a>
+                        <h2 class="font-weight-bold">Contact Us</h2>
+                    </div>
+                      <div class="card-body card-item-body">
+                        <div class="card-item-gallery mb-5 pb-3">
+                          <div class="card-item-slider">
+                              <div class="card-item-image">
+                                  <img src="img/company-ppl.jpg" alt="card-item-image" class="img-fluid">
+                                </div>
+                                <div class="card-item-image">
+                                  <img src="img/server1.jpg" alt="card-item-image" class="img-fluid">
+                                </div>
+                                <div class="card-item-image">
+                                  <img src="img/earth1.jpg" alt="card-item-image" class="img-fluid">
+                                </div>
+                          </div>
+                        </div>
+                        <div class="nav-details card-item-details font-weight-bold d-flex flex-column justify-content-start align-items-center text-center">
+                            <div class="nav-detail mb-3 mr-2">
+                              <i class="fas fa-tty purple-color mr-3"></i>
+                              <span class="nav-detail-text">
+                                  +44 895 765 6543
+                              </span>
+                            </div>
+                            <div class="nav-detail mb-3">
+                              <i class="far fa-clock purple-color mr-3"></i>
+                              <span class="nav-detail-text">
+                                  08:00AM - 6:00PM
+                              </span>
+                            </div>
+                            <div class="nav-detail ml-1 mb-2">
+                              <i class="fas fa-map-marker-alt purple-color mr-3"></i>
+                              <span class="nav-detail-text">
+                                  17 Main St,
+                                  London, <br>CE12 G94
+                              </span>
+                            </div>
+                            <button class="btn btn-outline-dark mt-3 text-capitalize">
+                              Have a question?
+                            </button>
+                          </div>
+                          <div class="card-item-social d-flex justify-content-center">
+                              <a href="http://facebook.com" class="pr-4 text-decoration-none"
+                                ><i class="fab fa-facebook-f"></i
+                              ></a>
+                              <a href="http://instagram.com" class="pr-4 text-decoration-none"
+                                ><i class="fab fa-instagram"></i
+                              ></a>
+                              <a href="http://twitter.com" class="pr-4 text-decoration-none"
+                                ><i class="fab fa-twitter"></i
+                              ></a>
+                              <a href="http://linkedin.com" class="text-decoration-none"
+                                ><i class="fab fa-linkedin-in"></i
+                              ></a>
+                            </div>
+                        </div>
+                    </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      
+    <!-- HEADER -->
+    <header id="header-about" class="py-4">
+      <div class="container">
+        <div class="row py-4 text-center text-white">
+          <div class="col">
+            <h3 class="display-4">Services</h3>
+            <p class="lead">You as a client need to know what we can offer</p>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- BOTTOM BAR -->
+    <div id="bottom-bar">
+      <ol
+        class="breadcrumb m-0  justify-content-center align-items-center bar-bg"
+      >
+        <li class="breadcrumb-item">
+          <a
+            href="index.html"
+            class="text-decoration-none text-muted font-weight-bold text-uppercase"
+            >Home</a
+          >
+        </li>
+        <li class="breadcrumb-item">
+          <a
+            href="#services"
+            class="text-decoration-none font-weight-bold text-uppercase"
+            >Services</a
+          >
+        </li>
+      </ol>
+    </div>
+
+    <!-- SERVICES SECTION -->
+    <section id="services" class="py-5 mb-2">
+      <div class="container">
+        <h3 class="text-center display-4 py-4">Our Services</h3>
+        <div class="row mb-5">
+          <div class="col-lg-4 col-sm-6" data-aos="zoom-out-up">
+            <div class="service-card">
+              <div class="card rounded-0">
+                <div class="card-body">
+                  <span class="service-icon pr-2">
+                    <i class="fas fa-headphones-alt fa-2x mb-3"></i>
+                  </span>
+                  <a href="#" class="text-decoration-none"
+                    ><h4 class="d-inline font-weight-bold">24/7 Support</h4></a
+                  >
+                  <p>
+                    We understand that network problems don't care about time of
+                    day and happen totally unexpectedly - That's why we always
+                    provide professional support from our staff 24/7.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-sm-6">
+            <div class="service-card">
+              <div class="card rounded-0">
+                <div class="card-body">
+                  <span class="service-icon pr-2">
+                    <i class="fas fa-network-wired fa-2x mb-3"></i>
+                  </span>
+                  <a href="#" class="text-decoration-none"
+                    ><h4 class="d-inline font-weight-bold">Wired Networks</h4></a
+                  >
+                  <p>
+                    Wired networks are still developed and updated, and for
+                    certain they are not technologically dead. We use most
+                    newest methods to achieve good wired connection such as STP, UTP, fibre optic.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-sm-6">
+            <div class="service-card">
+              <div class="card rounded-0">
+                <div class="card-body">
+                  <span class="service-icon pr-2">
+                    <i class="fas fa-signal fa-2x mb-3"></i>
+                  </span>
+                  <a href="#" class="text-decoration-none"
+                    ><h4 class="d-inline font-weight-bold">Connection</h4></a
+                  >
+                  <p>
+                    Sufficient connection is not enough for us, so is for you.
+                    We always aim to get the best of it. We do care for
+                    connection speed and availability, and this makes our
+                    services leading in the networking industry.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-sm-6">
+              <div class="service-card">
+                <div class="card rounded-0">
+                  <div class="card-body">
+                    <span class="service-icon pr-2">
+                      <i class="fas fa-wifi fa-2x mb-3"></i>
+                    </span>
+                    <a href="#" class="text-decoration-none"
+                      ><h4 class="d-inline font-weight-bold">Wireless Networks</h4></a
+                    >
+                    <p>
+                      Wired networks can be targeted wisely at some areas and have
+                      their own pros & cons. All of us value convenience, so we
+                      believe that fast and reliable WiFi connection can be a true
+                      masterpiece.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-sm-6">
+              <div class="service-card">
+                <div class="card rounded-0">
+                  <div class="card-body">
+                    <span class="service-icon pr-2">
+                      <i class="fas fa-lock fa-2x mb-3"></i>
+                    </span>
+                    <a href="#" class="text-decoration-none"
+                      ><h4 class="d-inline font-weight-bold">Security</h4></a
+                    >
+                    <p>
+                      Good network is a secured network. We can test, report and
+                      fix security holes in your connection that can be easily
+                      backdoored by hackers through advanced malware. You do not
+                      really want to experience that!
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-sm-6">
+              <div class="service-card">
+                <div class="card rounded-0">
+                  <div class="card-body">
+                    <span class="service-icon pr-2">
+                      <i class="fas fa-server fa-2x mb-3"></i>
+                    </span>
+                    <a href="#" class="text-decoration-none"
+                      ><h4 class="d-inline font-weight-bold">Server Installation</h4></a
+                    >
+                    <p>
+                      Modern business solutions often require a considerable
+                      amount of hardware equipment for IT departments within the
+                      company. We are best of the best when it comes to server
+                      setup!
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONSULTATION SECTION -->
+    <section id="consultation" class="py-5 text-center bg-light text-white">
+      <div class="container">
+        <div class="row py-5" data-aos="fade-right">
+          <div class="col">
+            <h2 class="display-4 text-capitalize mb-3">
+              We are here to help with your choices
+            </h2>
+            <p class="mb-3">
+              We understand that making choices is a difficult task, so we
+              always try to make it as accessible as possible.
+            </p>
+            <a href="#" class="btn btn-outline-light btn-lg" data-toggle="modal"
+            data-target="#formModal"
+              >Free Consultation</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- OFFER SECTION -->
+    <section id="offer" class="py-5 mt-2">
+      <div class="container">
+        <div class="row py-4">
+          <div class="col-lg-4 col-sm-6" data-aos="fade-up"
+          data-aos-duration="800">
+            <div class="offer-card">
+              <div class="card text-center">
+                <div
+                  class="card-header d-flex flex-column justify-content-center align-items-center"
+                >
+                  <h2 class="text-white">Basic</h2>
+                  <h3 class="text-white">£120</h3>
+                </div>
+                <div class="card-body py-4 bg-light text-muted">
+                  <div class="offer-arrow"></div>
+                  <ul class="features-list list-unstyled">
+                    <li class="feature-item mb-2">IT Support</li>
+                    <li class="feature-item mb-2">Network Fixing</li>
+                    <li class="feature-item mb-2">Network Setup</li>
+                    <li class="feature-item">Connection Testing</li>
+                  </ul>
+                  <a href="#services" class="btn btn-outline-dark btn-lg smooth"
+                    >Add This Plan</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-sm-6" data-aos="fade-down"
+          data-aos-duration="400">
+            <div class="offer-card">
+              <div class="card text-center">
+                <div
+                  class="card-header d-flex flex-column justify-content-center align-items-center"
+                >
+                  <h2 class="text-white">Advanced</h2>
+                  <h5 class="text-white">£240</h5>
+                  <h3 class="text-white">£200</h3>
+                </div>
+                <div class="card-body py-4 bg-light">
+                    <div class="offer-arrow"></div>
+                  <ul class="features-list list-unstyled text-muted">
+                    <li class="feature-item mb-2">Server Setup</li>
+                    <li class="feature-item mb-2">Network Update</li>
+                    <li class="feature-item mb-2">Bandwidth Tests</li>
+                    <li class="feature-item">System Administration</li>
+                  </ul>
+                  <a href="#services" class="btn btn-outline-dark btn-lg smooth"
+                    >Add This Plan</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-sm-6" data-aos="fade-up"
+          data-aos-duration="800">
+            <div class="offer-card">
+              <div class="card text-center">
+                <div
+                  class="card-header d-flex flex-column justify-content-center align-items-center"
+                >
+                  <h2 class="text-white">Business</h2>
+                  <h3 class="text-white">£280</h3>
+                </div>
+                <div class="card-body py-4 bg-light">
+                    <div class="offer-arrow"></div>
+                  <ul class="features-list list-unstyled text-muted">
+                    <li class="feature-item mb-2">Security Tests</li>
+                    <li class="feature-item mb-2">Security Fixes</li>
+                    <li class="feature-item mb-2">Service Automation</li>
+                    <li class="feature-item">Network Statistics</li>
+                  </ul>
+                  <a href="#services" class="btn btn-outline-dark btn-lg smooth"
+                    >Add This Plan</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ SECTION -->
+    <section id="faq" class="p-5 mt-4">
+      <div class="container">
+        <h3 class="text-center pb-3">Frequently Asked Questions</h3>
+        <div class="row py-2">
+          <div class="col-lg-6" data-aos="fade-right">
+            <div id="accordion">
+              <div class="card mb-2">
+                <div class="card-header">
+                  <a href="#question-1" data-toggle="collapse" data-parent="#accordion" class="text-decoration-none" aria-expanded="true">
+                      <span class="faq-icon d-flex align-items-center"
+                      ><i class="fas fa-chevron-right mr-4 d-inline-flex justify-content-center align-items-center"></i>
+                      <p class="lead text-dark font-weight-bold">Do I need security tests?</p>
+                    </span>
+                  </a>
+                </div>
+                <!-- Answer -->
+                <div id="question-1" class="collapse collapse show">
+                  <div class="card-body text-muted">
+                    Everyone who is active on any network needs periodical security tests to ensure  their data safety.
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="card">
+                <div class="card-header mb-2">
+                  <a href="#question-2" data-toggle="collapse" data-parent="#accordion" class="text-decoration-none">
+                      <span class="faq-icon d-flex align-items-center"
+                      ><i class="fas fa-chevron-right mr-4 d-inline-flex justify-content-center align-items-center"></i>
+                      <p class="lead text-dark font-weight-bold">How can I speed up my connection?</p>
+                    </span>
+                  </a>
+                </div>
+                <!-- Answer -->
+                <div id="question-2" class="collapse">
+                  <div class="card-body text-muted">
+                    It's quite simple. Just update your hardware and let professional take care of your network.
+                  </div>
+                </div>
+              </div>
+
+              <div class="card">
+                <div class="card-header border-0">
+                  <a href="#question-3" data-toggle="collapse" data-parent="#accordion" class="text-decoration-none">
+                      <span class="faq-icon d-flex align-items-center"
+                      ><i class="fas fa-chevron-right mr-4 d-inline-flex justify-content-center align-items-center"></i>
+                      <p class="lead text-dark font-weight-bold">Do I need to setup my firewall?</p>
+                    </span>
+                  </a>
+                </div>
+                <!-- Answer -->
+                <div id="question-3" class="collapse">
+                  <div class="card-body text-muted">
+                    Firewall is crucial part of your network, it is a shield that protects you from threats that might come in and out of your network.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-lg-6" data-aos="fade-left">
+            <div id="accordion">
+              <div class="card">
+                <div class="card-header mb-2">
+                  <a href="#question-4" data-toggle="collapse" data-parent="#accordion" class="text-decoration-none">
+                      <span class="faq-icon d-flex align-items-center"
+                      ><i class="fas fa-chevron-right mr-4 d-inline-flex justify-content-center align-items-center"></i>
+                      <p class="lead text-dark font-weight-bold">Is gathering network data helpful?</p>
+                    </span>
+                  </a>
+                </div>
+                <!-- Answer -->
+                <div id="question-4" class="collapse">
+                  <div class="card-body text-muted">
+                    Certainly. For you to gather data in a proper way, you would need help from one of our engineers who can setup automation data tests. Additionally, it can tell you about condition of your home network.
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="card">
+                <div class="card-header mb-2">
+                  <a href="#question-5" data-toggle="collapse" data-parent="#accordion" class="text-decoration-none">
+                      <span class="faq-icon d-flex align-items-center"
+                      ><i class="fas fa-chevron-right mr-4 d-inline-flex justify-content-center align-items-center"></i>
+                      <p class="lead text-dark font-weight-bold">Wireless or wired? Which is better?</p>
+                    </span>
+                  </a>
+                </div>
+                <!-- Answer -->
+                <div id="question-5" class="collapse">
+                  <div class="card-body text-muted">
+                    There is no simple answer for that. This totally depends on environmental aspects upon our engineers will decide which type you should go with.
+                  </div>
+                </div>
+              </div>
+
+              <div class="card">
+                <div class="card-header border-0">
+                  <a href="#question-6" data-toggle="collapse" data-parent="#accordion" class="text-decoration-none">
+                      <span class="faq-icon d-flex align-items-center"
+                      ><i class="fas fa-chevron-right mr-4 d-inline-flex justify-content-center align-items-center"></i>
+                      <p class="lead text-dark font-weight-bold">How can I take advantage of my network?</p>
+                    </span>
+                  </a>
+                </div>
+                <!-- Answer -->
+                <div id="question-6" class="collapse">
+                  <div class="card-body text-muted">
+                    Network connection is vital for many parts of today's life. You can perform tasks related to your job or buy needed items with online payment. It's up to you to decide whether or not it is helpful.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer id="main-footer" class="text-center p-3">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-3 col-sm-6 p-2 text-left" data-aos="fade-up" data-aos-duration="600">
+              <div class="intro d-flex flex-inline">
+                <img
+                  src="img/logo.png"
+                  alt="logo-img"
+                  class="img-fluid logo-footer"
+                />
+              </div>
+              <p class="py-2">
+                To gain contracts with biggest Internet Service Providers we
+                must stay ahead with current trends and endlessly transforming
+                technologies.
+              </p>
+            </div>
+            <div class="col-lg-3 col-sm-6 py-2 text-left" data-aos="fade-down" data-aos-duration="600">
+              <h4 class="py-2">Contact Us</h4>
+              <div class="d-flex flex-inline">
+                <span class="icon"><i class="fas fa-tty pr-3"></i></span>
+                <p>+44 895 765 6543</p>
+              </div>
+              <div class="d-flex flex-inline">
+                <span class="icon"><i class="far fa-envelope pr-3"></i></span>
+                <p>info@novanetworks.org</p>
+              </div>
+              <div class="d-flex flex-inline">
+                <span class="icon"
+                  ><i class="fas fa-map-marker-alt pr-3"></i
+                ></span>
+                <p>17 Main Street, <br />London, CE12 G94</p>
+              </div>
+              <div class="d-flex flex-inline icons">
+                <a href="http://facebook.com" class="pr-3 text-decoration-none"
+                  ><i class="fab fa-facebook-f"></i
+                ></a>
+                <a href="http://instagram.com" class="pr-3 text-decoration-none"
+                  ><i class="fab fa-instagram"></i
+                ></a>
+                <a href="http://twitter.com" class="pr-3 text-decoration-none"
+                  ><i class="fab fa-twitter"></i
+                ></a>
+                <a href="http://linkedin.com" class="text-decoration-none"
+                  ><i class="fab fa-linkedin-in"></i
+                ></a>
+              </div>
+            </div>
+            <div class="col-lg-3 col-sm-6 py-2 text-left" data-aos="fade-up" data-aos-duration="600">
+              <h4 class="py-2">Recent News</h4>
+              <div class="news mb-3">
+                <a href="blog.html" class="blog-link text-decoration-none">
+                  <p class="my-0">Protect Your Data</p>
+                </a>
+                <small><span class="text-muted">August 14, 2019</span></small>
+              </div>
+              <div class="news">
+                <a href="blog.html" class="blog-link text-decoration-none">
+                  <p class="my-0">Your Personal Guide on WiFi Networks</p>
+                </a>
+                <small><span class="text-muted">August 25, 2019</span></small>
+              </div>
+            </div>
+            <div class="col-lg-3 col-sm-6 py-2 text-left" data-aos="fade-down" data-aos-duration="600">
+              <h4 class="py-2">Quick Links</h4>
+              <ul class="list-unstyled">
+                <li class="mb-2">
+                  <a class="text-decoration-none quick-link" href="index.html"
+                    >Home</a
+                  >
+                </li>
+                <li class="mb-2">
+                  <a class="text-decoration-none quick-link" href="about.html"
+                    >About</a
+                  >
+                </li>
+                <li class="mb-2">
+                  <a
+                    class="text-decoration-none quick-link"
+                    href="services.html"
+                    >Services</a
+                  >
+                </li>
+                <li class="mb-2">
+                  <a class="text-decoration-none quick-link" href="blog.html"
+                    >Blog</a
+                  >
+                </li>
+                <li class="mb-2">
+                  <a class="text-decoration-none quick-link" href="blog.html"
+                    >Post</a
+                  >
+                </li>
+                <li class="mb-2">
+                  <a class="text-decoration-none quick-link" href="contact.html"
+                    >Contact</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+    <!-- Copyright -->
+    <div class="bottom-info text-white text-center p-4">
+      <span>Copyright &copy; All Rights Reserved</span>
+      <span id="year"></span>
+
+
+
+       <!-- FORM MODAL -->
+       <div class="modal fade" id="formModal">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-body">
+                <button class="close" data-dismiss="modal">
+                  <span
+                    ><i class="fas fa-window-close dark-purple-color"></i
+                  ></span>
+                </button>
+                <form class="form justify-content-center align-items-center p-3">
+                  <div class="input-group">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text mb-2"
+                        ><i class="far fa-user"></i
+                      ></span>
+                    </div>
+                    <input
+                      type="text"
+                      class="form-control mb-4 mt-4 text-dark form-control-lg form-control-outline-0"
+                      placeholder="Enter Name"
+                    />
+                  </div>
+                  <div class="input-group">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text mb-3"
+                        ><i class="far fa-envelope"></i
+                      ></span>
+                    </div>
+                    <input
+                      type="email"
+                      class="form-control mb-3 text-dark form-control-lg form-control-outline-0"
+                      placeholder="Enter Email"
+                    />
+                  </div>
+                  <button
+                    type="submit"
+                    value="Submit"
+                    class="btn btn-dark btn-lg btn-block border-dark mt-5"
+                  >
+                    Submit
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+
+
+     <!-- SEARCH MODAL -->
+     <div class="modal fade expand" id="searchModal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-body">
+              <button class="close search-close" data-dismiss="modal">
+                <span
+                  ><i class="far fa-times-circle text-white"></i
+                ></span>
+              </button>
+              <form class="form justify-content-center align-items-center">
+                <div class="input-group">
+                    <input
+                    type="text"
+                    class="form-control text-white form-control-lg form-control-outline-0"
+                    placeholder="Search..."
+                  />
+                  <div class="input-group-append">
+                      <span class="input-group-text mb-3"
+                        ><a href="#"><i class="fas fa-search text-white"></i
+                          ></a></span>
+                    </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    
+
+    <!-- Slick Slider -->
+    <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.js"
+    integrity="sha256-zUQGihTEkA4nkrgfbbAM1f3pxvnWiznBND+TuJoUv3M="
+    crossorigin="anonymous"
+  ></script>
+ 
+  <!-- AOS Library -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+ 
+    <!-- Custom JavaScript -->
+  <script src="js/app.js"></script>
+  </body>
+</html>

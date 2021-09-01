@@ -1,0 +1,63 @@
+$light-color-transparent: rgba(255, 255, 255, 0.7);
+$dark-color-transparent: rgba(0, 0, 0, 0.4);
+$dark-color: #333;
+$gray-color: #ccc;
+$light-color: #fff;
+$bar-color: #dde4e9;
+$primary-color: #634d9e;
+$secondary-color: #370968;
+$ease-in-out: cubic-bezier(0.59, 0.02, 0.48, 1);
+$ease-in: cubic-bezier(0.78, -0.02, 0.66, 1.29);
+
+// Media Query Mixins
+@mixin size($size) {
+  @if $size == phone {
+    @media screen and (min-width: 300px) and (max-width: 991px) {
+      @content;
+    }
+  } @else if $size == phone-landscape {
+    @media screen and (min-height: 300px) and (max-height: 767px) and (orientation: landscape) {
+      @content;
+    }
+  } @else if $size == phone-medium {
+    @media screen and (min-width: 360px) and (max-width: 991px) {
+      @content;
+    }
+  } @else if $size == phone-medium-landscape {
+    @media screen and (min-height: 360px) and (max-height: 767px) and (orientation: landscape) {
+      @content;
+    }
+  } @else if $size == phone-large {
+    @media screen and (max-width: 400px) {
+      @content;
+    }
+  } @else if $size == phone-xl {
+    @media screen and (min-width: 400px) and (max-width: 800px) {
+      @content;
+    }
+  } @else if $size == phone-xl-landscape {
+    @media screen and (min-width: 750px) and (max-width: 995px) {
+      @content;
+    }
+  } @else if $size == laptop {
+    @media screen and (min-width: 955px) and (max-width: 1100px) {
+      @content;
+    }
+  } @else if $size == laptop-medium {
+    @media screen and (min-width: 1024px) and (max-width: 1700px) {
+      @content;
+    }
+  } @else if $size == laptop-large {
+    @media screen and (min-width: 1300px) and (max-width: 1800px) {
+      @content;
+    }
+  } @else if $size == laptop-xl {
+    @media screen and (min-width: 1600px) and (max-width: 1800px) {
+      @content;
+    }
+  } @else if $size == break-fix-900 {
+    @media screen and (min-width: 992px) and (max-width: 1024px) {
+      @content;
+    }
+  }
+}
