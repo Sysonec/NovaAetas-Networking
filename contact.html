@@ -29,9 +29,22 @@
       crossorigin="anonymous"
     />
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
     <!-- AOS Library -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- Leaflet -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.1/dist/leaflet.css"
+      integrity="sha256-sA+zWATbFveLLNqWO2gtiw3HL/lh1giY/Inf1BJ0z14="
+      crossorigin=""
+    />
+    <!-- CSS -->
     <link rel="stylesheet" href="css/style.css" />
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
     <title>NovaAetas Networking</title>
@@ -39,14 +52,17 @@
   <body id="contact-page">
     <!-- LOADER -->
     <div class="loader">
-      <img src="img/logo-cloud.png" alt="logo-img" class="img-fluid loader-logo">
+      <img
+        src="img/logo-cloud.png"
+        alt="logo-img"
+        class="img-fluid loader-logo"
+      />
     </div>
 
     <!-- LOADER WRAP -->
     <div class="loader-wrap">
-
-    <!-- BACK TO TOP BTN -->
-    <div id="btn-top">
+      <!-- BACK TO TOP BTN -->
+      <div id="btn-top">
         <a href="#contact-page" class="text-decoration-none smooth"
           ><i class="fas fa-chevron-up"></i
         ></a>
@@ -54,197 +70,218 @@
 
       <!-- NAVBAR -->
       <nav class="navbar navbar-expand-lg navbar-light sticky-top">
-          <div class="container">
-            <ul class="navbar-nav d-block d-lg-none">
-              <li class="nav-item nav-info">
-                <button
-                  type="button"
-                  class="info-link collapsed"
-                  data-toggle="collapse"
-                  data-target="#nav-info"
-                >
-                  <div class="circles">
-                    <div class="circle mt-1"></div>
-                    <div class="circle mt-1"></div>
-                    <div class="circle mt-1"></div>
-                  </div>
-                </button>
-              </li>
-            </ul>
-            <div class="card card-info position-absolute collapse" id="nav-info">
-              <div class="card-body bg-light">
-                <div class="nav-details font-weight-bold d-flex flex-column justify-content-center align-items-start text-center">
-                  <div class="nav-detail mb-3">
-                    <i class="fas fa-tty purple-color mr-3"></i>
-                    <span class="nav-detail-text">
-                        +44 895 765 6543
-                    </span>
-                  </div>
-                  <div class="nav-detail mb-3">
-                    <i class="far fa-clock purple-color mr-3"></i>
-                    <span class="nav-detail-text">
-                        08:00AM - 6:00PM
-                    </span>
-                  </div>
-                  <div class="nav-detail">
-                    <i class="fas fa-map-marker-alt purple-color mr-3"></i>
-                    <span class="nav-detail-text">
-                        17 Main St,
-                        London, <br>CE12 G94
-                    </span>
-                  </div>
-                  <button class="btn btn-outline-dark mt-3 text-capitalize">
-                    Have a question?
-                  </button>
+        <div class="container">
+          <ul class="navbar-nav d-block d-lg-none">
+            <li class="nav-item nav-info">
+              <button
+                type="button"
+                class="info-link collapsed"
+                data-toggle="collapse"
+                data-target="#nav-info"
+              >
+                <div class="circles">
+                  <div class="circle mt-1"></div>
+                  <div class="circle mt-1"></div>
+                  <div class="circle mt-1"></div>
                 </div>
-              </div>
-            </div>
-            <a href="#contact-page" class="navbar-brand smooth">
-              <img src="img/logo.png" alt="logo" class="logo" />
-            </a>
-            <ul class="navbar-nav d-block d-lg-none ml-auto mr-3">
-              <li class="nav-item nav-search">
-                <button
-                  type="button"
-                  class="search-link collapsed"
-                  data-toggle="collapse"
-                  data-target="#nav-search"
-                >
-                  <i class="fas fa-search"></i>
+              </button>
+            </li>
+          </ul>
+          <div class="card card-info position-absolute collapse" id="nav-info">
+            <div class="card-body bg-light">
+              <div
+                class="nav-details font-weight-bold d-flex flex-column justify-content-center align-items-start text-center"
+              >
+                <div class="nav-detail mb-3">
+                  <i class="fas fa-tty purple-color mr-3"></i>
+                  <span class="nav-detail-text"> +44 895 765 6543 </span>
+                </div>
+                <div class="nav-detail mb-3">
+                  <i class="far fa-clock purple-color mr-3"></i>
+                  <span class="nav-detail-text"> 08:00AM - 6:00PM </span>
+                </div>
+                <div class="nav-detail">
+                  <i class="fas fa-map-marker-alt purple-color mr-3"></i>
+                  <span class="nav-detail-text">
+                    17 Main St, London, <br />CE12 G94
+                  </span>
+                </div>
+                <button class="btn btn-outline-dark mt-3 text-capitalize">
+                  Have a question?
                 </button>
-              </li>
-            </ul>
-            <div
-              class="input-group bg-light collapse group-collapse"
-              id="nav-search"
-            >
-              <input
-                type="text"
-                class="form-control collapse-search form-control-outline-0 bg-light border-0 font-weight-bold"
-                placeholder="Search"
-              />
-              <div class="input-group-append">
-                <span class="input-group-text bg-light border-0"
-                  ><a href="#" class="text-decoration-none"
-                    ><i
-                      class="fas fa-search collapse-search-icon text-muted mr-1"
-                    ></i></a
-                ></span>
               </div>
-            </div>
-            <button
-              class="navbar-toggler collapsed"
-              data-toggle="collapse"
-              data-target="#navbarCollapse"
-            >
-              <span class="toggler-icon">
-                <div class="line"></div>
-                <div class="line"></div>
-                <div class="line"></div>
-              </span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarCollapse">
-              <ul class="navbar-nav ml-auto font-weight-bold">
-                <li class="nav-item mr-3 px-3">
-                  <a href="index.html" class="nav-link">Home</a>
-                </li>
-                <li class="nav-item mr-3 px-3">
-                  <a href="about.html" class="nav-link">About</a>
-                </li>
-                <li class="nav-item mr-3 px-3">
-                  <a href="services.html" class="nav-link">Services</a>
-                </li>
-                <li class="nav-item mr-3 px-3">
-                  <a href="blog.html" class="nav-link">Blog</a>
-                </li>
-                <li class="nav-item mr-3 px-3 active-link">
-                  <a href="#contact-page" class="nav-link text-dark smooth">Contact</a>
-                </li>
-                <li class="nav-item ml-5 px-3 nav-item-search">
-                  <a
-                    href="#"
-                    class="nav-link"
-                    data-toggle="modal"
-                    data-target="#searchModal"
-                    ><i class="fas fa-search"></i
-                  ></a>
-                </li>
-                <li class="nav-item px-3 nav-item-info">
-                  <a
-                    href="#"
-                    class="nav-link collapsed"
-                    data-toggle="collapse"
-                    data-target="#nav-item-content"
-                    ><div class="line"></div>
-                    <div class="line"></div>
-                    <div class="line"></div></a>
-                    <div class="card card-item-info collapse position-fixed text-center bg-light px-2 py-1" id="nav-item-content">
-                      <div class="card-item-heading mt-4 mb-4">
-                          <a href="#" class="content-icon text-decoration-none text-dark float-left mt-1">
-                              <div class="line"></div>
-                              <div class="line"></div>
-                          </a>
-                          <h2 class="font-weight-bold">Contact Us</h2>
-                      </div>
-                        <div class="card-body card-item-body">
-                          <div class="card-item-gallery mb-5 pb-3">
-                            <div class="card-item-slider">
-                                <div class="card-item-image">
-                                    <img src="img/company-ppl.jpg" alt="card-item-image" class="img-fluid">
-                                  </div>
-                                  <div class="card-item-image">
-                                    <img src="img/server1.jpg" alt="card-item-image" class="img-fluid">
-                                  </div>
-                                  <div class="card-item-image">
-                                    <img src="img/earth1.jpg" alt="card-item-image" class="img-fluid">
-                                  </div>
-                            </div>
-                          </div>
-                          <div class="nav-details card-item-details font-weight-bold d-flex flex-column justify-content-start align-items-center text-center">
-                              <div class="nav-detail mb-3 mr-2">
-                                <i class="fas fa-tty purple-color mr-3"></i>
-                                <span class="nav-detail-text">
-                                    +44 895 765 6543
-                                </span>
-                              </div>
-                              <div class="nav-detail mb-3">
-                                <i class="far fa-clock purple-color mr-3"></i>
-                                <span class="nav-detail-text">
-                                    08:00AM - 6:00PM
-                                </span>
-                              </div>
-                              <div class="nav-detail ml-1 mb-2">
-                                <i class="fas fa-map-marker-alt purple-color mr-3"></i>
-                                <span class="nav-detail-text">
-                                    17 Main St,
-                                    London, <br>CE12 G94
-                                </span>
-                              </div>
-                              <button class="btn btn-outline-dark mt-3 text-capitalize">
-                                Have a question?
-                              </button>
-                            </div>
-                            <div class="card-item-social d-flex justify-content-center">
-                                <a href="http://facebook.com" class="pr-4 text-decoration-none"
-                                  ><i class="fab fa-facebook-f"></i
-                                ></a>
-                                <a href="http://instagram.com" class="pr-4 text-decoration-none"
-                                  ><i class="fab fa-instagram"></i
-                                ></a>
-                                <a href="http://twitter.com" class="pr-4 text-decoration-none"
-                                  ><i class="fab fa-twitter"></i
-                                ></a>
-                                <a href="http://linkedin.com" class="text-decoration-none"
-                                  ><i class="fab fa-linkedin-in"></i
-                                ></a>
-                              </div>
-                          </div>
-                      </div>
-                </li>
-              </ul>
             </div>
           </div>
-        </nav>
+          <a href="#contact-page" class="navbar-brand smooth">
+            <img src="img/logo.png" alt="logo" class="logo" />
+          </a>
+          <ul class="navbar-nav d-block d-lg-none ml-auto mr-3">
+            <li class="nav-item nav-search">
+              <button
+                type="button"
+                class="search-link collapsed"
+                data-toggle="collapse"
+                data-target="#nav-search"
+              >
+                <i class="fas fa-search"></i>
+              </button>
+            </li>
+          </ul>
+          <div
+            class="input-group bg-light collapse group-collapse"
+            id="nav-search"
+          >
+            <input
+              type="text"
+              class="form-control collapse-search form-control-outline-0 bg-light border-0 font-weight-bold"
+              placeholder="Search"
+            />
+            <div class="input-group-append">
+              <span class="input-group-text bg-light border-0"
+                ><a href="#" class="text-decoration-none"
+                  ><i
+                    class="fas fa-search collapse-search-icon text-muted mr-1"
+                  ></i></a
+              ></span>
+            </div>
+          </div>
+          <button
+            class="navbar-toggler collapsed"
+            data-toggle="collapse"
+            data-target="#navbarCollapse"
+          >
+            <span class="toggler-icon">
+              <div class="line"></div>
+              <div class="line"></div>
+              <div class="line"></div>
+            </span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav ml-auto font-weight-bold">
+              <li class="nav-item mr-3 px-3">
+                <a href="index.html" class="nav-link">Home</a>
+              </li>
+              <li class="nav-item mr-3 px-3">
+                <a href="about.html" class="nav-link">About</a>
+              </li>
+              <li class="nav-item mr-3 px-3">
+                <a href="services.html" class="nav-link">Services</a>
+              </li>
+              <li class="nav-item mr-3 px-3">
+                <a href="blog.html" class="nav-link">Blog</a>
+              </li>
+              <li class="nav-item mr-3 px-3 active-link">
+                <a href="#contact-page" class="nav-link text-dark smooth"
+                  >Contact</a
+                >
+              </li>
+              <li class="nav-item ml-5 px-3 nav-item-search">
+                <a
+                  href="#"
+                  class="nav-link"
+                  data-toggle="modal"
+                  data-target="#searchModal"
+                  ><i class="fas fa-search"></i
+                ></a>
+              </li>
+              <li class="nav-item px-3 nav-item-info">
+                <a
+                  href="#"
+                  class="nav-link collapsed"
+                  data-toggle="collapse"
+                  data-target="#nav-item-content"
+                  ><div class="line"></div>
+                  <div class="line"></div>
+                  <div class="line"></div
+                ></a>
+                <div
+                  class="card card-item-info collapse position-fixed text-center bg-light px-2 py-1"
+                  id="nav-item-content"
+                >
+                  <div class="card-item-heading mt-4 mb-4">
+                    <a
+                      href="#"
+                      class="content-icon text-decoration-none text-dark float-left mt-1"
+                    >
+                      <div class="line"></div>
+                      <div class="line"></div>
+                    </a>
+                    <h2 class="font-weight-bold">Contact Us</h2>
+                  </div>
+                  <div class="card-body card-item-body">
+                    <div class="card-item-gallery mb-5 pb-3">
+                      <div class="card-item-slider">
+                        <div class="card-item-image">
+                          <img
+                            src="img/company-ppl.jpg"
+                            alt="card-item-image"
+                            class="img-fluid"
+                          />
+                        </div>
+                        <div class="card-item-image">
+                          <img
+                            src="img/server1.jpg"
+                            alt="card-item-image"
+                            class="img-fluid"
+                          />
+                        </div>
+                        <div class="card-item-image">
+                          <img
+                            src="img/earth1.jpg"
+                            alt="card-item-image"
+                            class="img-fluid"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="nav-details card-item-details font-weight-bold d-flex flex-column justify-content-start align-items-center text-center"
+                    >
+                      <div class="nav-detail mb-3 mr-2">
+                        <i class="fas fa-tty purple-color mr-3"></i>
+                        <span class="nav-detail-text"> +44 895 765 6543 </span>
+                      </div>
+                      <div class="nav-detail mb-3">
+                        <i class="far fa-clock purple-color mr-3"></i>
+                        <span class="nav-detail-text"> 08:00AM - 6:00PM </span>
+                      </div>
+                      <div class="nav-detail ml-1 mb-2">
+                        <i class="fas fa-map-marker-alt purple-color mr-3"></i>
+                        <span class="nav-detail-text">
+                          17 Main St, London, <br />CE12 G94
+                        </span>
+                      </div>
+                      <button class="btn btn-outline-dark mt-3 text-capitalize">
+                        Have a question?
+                      </button>
+                    </div>
+                    <div class="card-item-social d-flex justify-content-center">
+                      <a
+                        href="http://facebook.com"
+                        class="pr-4 text-decoration-none"
+                        ><i class="fab fa-facebook-f"></i
+                      ></a>
+                      <a
+                        href="http://instagram.com"
+                        class="pr-4 text-decoration-none"
+                        ><i class="fab fa-instagram"></i
+                      ></a>
+                      <a
+                        href="http://twitter.com"
+                        class="pr-4 text-decoration-none"
+                        ><i class="fab fa-twitter"></i
+                      ></a>
+                      <a href="http://linkedin.com" class="text-decoration-none"
+                        ><i class="fab fa-linkedin-in"></i
+                      ></a>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
 
       <!-- HEADER -->
       <header id="header-about" class="py-4">
@@ -263,7 +300,7 @@
       <!-- BOTTOM BAR -->
       <div id="bottom-bar">
         <ol
-          class="breadcrumb m-0  justify-content-center align-items-center bar-bg"
+          class="breadcrumb m-0 justify-content-center align-items-center bar-bg"
         >
           <li class="breadcrumb-item">
             <a
@@ -374,113 +411,129 @@
         </div>
       </section>
 
-      <!-- Google Maps -->
+      <!-- Leaflet Map -->
       <div id="map" data-aos="fade-out"></div>
 
       <!-- FOOTER -->
       <footer id="main-footer" class="text-center p-3">
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-3 col-sm-6 p-2 text-left" data-aos="fade-up" data-aos-duration="600">
-                <div class="intro d-flex flex-inline">
-                  <img
-                    src="img/logo.png"
-                    alt="logo-img"
-                    class="img-fluid logo-footer"
-                  />
-                </div>
-                <p class="py-2">
-                  To gain contracts with biggest Internet Service Providers we
-                  must stay ahead with current trends and endlessly transforming
-                  technologies.
-                </p>
+        <div class="container">
+          <div class="row">
+            <div
+              class="col-lg-3 col-sm-6 p-2 text-left"
+              data-aos="fade-up"
+              data-aos-duration="600"
+            >
+              <div class="intro d-flex flex-inline">
+                <img
+                  src="img/logo.png"
+                  alt="logo-img"
+                  class="img-fluid logo-footer"
+                />
               </div>
-              <div class="col-lg-3 col-sm-6 py-2 text-left" data-aos="fade-down" data-aos-duration="600">
-                <h4 class="py-2">Contact Us</h4>
-                <div class="d-flex flex-inline">
-                  <span class="icon"><i class="fas fa-tty pr-3"></i></span>
-                  <p>+44 895 765 6543</p>
-                </div>
-                <div class="d-flex flex-inline">
-                  <span class="icon"><i class="far fa-envelope pr-3"></i></span>
-                  <p>info@novanetworks.org</p>
-                </div>
-                <div class="d-flex flex-inline">
-                  <span class="icon"
-                    ><i class="fas fa-map-marker-alt pr-3"></i
-                  ></span>
-                  <p>17 Main Street, <br />London, CE12 G94</p>
-                </div>
-                <div class="d-flex flex-inline icons">
-                  <a href="http://facebook.com" class="pr-3 text-decoration-none"
-                    ><i class="fab fa-facebook-f"></i
-                  ></a>
-                  <a href="http://instagram.com" class="pr-3 text-decoration-none"
-                    ><i class="fab fa-instagram"></i
-                  ></a>
-                  <a href="http://twitter.com" class="pr-3 text-decoration-none"
-                    ><i class="fab fa-twitter"></i
-                  ></a>
-                  <a href="http://linkedin.com" class="text-decoration-none"
-                    ><i class="fab fa-linkedin-in"></i
-                  ></a>
-                </div>
+              <p class="py-2">
+                To gain contracts with biggest Internet Service Providers we
+                must stay ahead with current trends and endlessly transforming
+                technologies.
+              </p>
+            </div>
+            <div
+              class="col-lg-3 col-sm-6 py-2 text-left"
+              data-aos="fade-down"
+              data-aos-duration="600"
+            >
+              <h4 class="py-2">Contact Us</h4>
+              <div class="d-flex flex-inline">
+                <span class="icon"><i class="fas fa-tty pr-3"></i></span>
+                <p>+44 895 765 6543</p>
               </div>
-              <div class="col-lg-3 col-sm-6 py-2 text-left" data-aos="fade-up" data-aos-duration="600">
-                <h4 class="py-2">Recent News</h4>
-                <div class="news mb-3">
-                  <a href="blog.html" class="blog-link text-decoration-none">
-                    <p class="my-0">Protect Your Data</p>
-                  </a>
-                  <small><span class="text-muted">August 14, 2019</span></small>
-                </div>
-                <div class="news">
-                  <a href="blog.html" class="blog-link text-decoration-none">
-                    <p class="my-0">Your Personal Guide on WiFi Networks</p>
-                  </a>
-                  <small><span class="text-muted">August 25, 2019</span></small>
-                </div>
+              <div class="d-flex flex-inline">
+                <span class="icon"><i class="far fa-envelope pr-3"></i></span>
+                <p>info@novanetworks.org</p>
               </div>
-              <div class="col-lg-3 col-sm-6 py-2 text-left" data-aos="fade-down" data-aos-duration="600">
-                <h4 class="py-2">Quick Links</h4>
-                <ul class="list-unstyled">
-                  <li class="mb-2">
-                    <a class="text-decoration-none quick-link" href="index.html"
-                      >Home</a
-                    >
-                  </li>
-                  <li class="mb-2">
-                    <a class="text-decoration-none quick-link" href="about.html"
-                      >About</a
-                    >
-                  </li>
-                  <li class="mb-2">
-                    <a
-                      class="text-decoration-none quick-link"
-                      href="services.html"
-                      >Services</a
-                    >
-                  </li>
-                  <li class="mb-2">
-                    <a class="text-decoration-none quick-link" href="blog.html"
-                      >Blog</a
-                    >
-                  </li>
-                  <li class="mb-2">
-                    <a class="text-decoration-none quick-link" href="blog.html"
-                      >Post</a
-                    >
-                  </li>
-                  <li class="mb-2">
-                    <a class="text-decoration-none quick-link" href="contact.html"
-                      >Contact</a
-                    >
-                  </li>
-                </ul>
+              <div class="d-flex flex-inline">
+                <span class="icon"
+                  ><i class="fas fa-map-marker-alt pr-3"></i
+                ></span>
+                <p>17 Main Street, <br />London, CE12 G94</p>
+              </div>
+              <div class="d-flex flex-inline icons">
+                <a href="http://facebook.com" class="pr-3 text-decoration-none"
+                  ><i class="fab fa-facebook-f"></i
+                ></a>
+                <a href="http://instagram.com" class="pr-3 text-decoration-none"
+                  ><i class="fab fa-instagram"></i
+                ></a>
+                <a href="http://twitter.com" class="pr-3 text-decoration-none"
+                  ><i class="fab fa-twitter"></i
+                ></a>
+                <a href="http://linkedin.com" class="text-decoration-none"
+                  ><i class="fab fa-linkedin-in"></i
+                ></a>
               </div>
             </div>
+            <div
+              class="col-lg-3 col-sm-6 py-2 text-left"
+              data-aos="fade-up"
+              data-aos-duration="600"
+            >
+              <h4 class="py-2">Recent News</h4>
+              <div class="news mb-3">
+                <a href="blog.html" class="blog-link text-decoration-none">
+                  <p class="my-0">Protect Your Data</p>
+                </a>
+                <small><span class="text-muted">August 14, 2019</span></small>
+              </div>
+              <div class="news">
+                <a href="blog.html" class="blog-link text-decoration-none">
+                  <p class="my-0">Your Personal Guide on WiFi Networks</p>
+                </a>
+                <small><span class="text-muted">August 25, 2019</span></small>
+              </div>
+            </div>
+            <div
+              class="col-lg-3 col-sm-6 py-2 text-left"
+              data-aos="fade-down"
+              data-aos-duration="600"
+            >
+              <h4 class="py-2">Quick Links</h4>
+              <ul class="list-unstyled">
+                <li class="mb-2">
+                  <a class="text-decoration-none quick-link" href="index.html"
+                    >Home</a
+                  >
+                </li>
+                <li class="mb-2">
+                  <a class="text-decoration-none quick-link" href="about.html"
+                    >About</a
+                  >
+                </li>
+                <li class="mb-2">
+                  <a
+                    class="text-decoration-none quick-link"
+                    href="services.html"
+                    >Services</a
+                  >
+                </li>
+                <li class="mb-2">
+                  <a class="text-decoration-none quick-link" href="blog.html"
+                    >Blog</a
+                  >
+                </li>
+                <li class="mb-2">
+                  <a class="text-decoration-none quick-link" href="blog.html"
+                    >Post</a
+                  >
+                </li>
+                <li class="mb-2">
+                  <a class="text-decoration-none quick-link" href="contact.html"
+                    >Contact</a
+                  >
+                </li>
+              </ul>
+            </div>
           </div>
-        </footer>
+        </div>
+      </footer>
 
       <!-- Copyright -->
       <div class="bottom-info text-white text-center p-4">
@@ -488,35 +541,32 @@
         <span id="year"></span>
       </div>
 
-
-       <!-- SEARCH MODAL -->
-       <div class="modal fade expand" id="searchModal">
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <div class="modal-body">
-                <button class="close search-close" data-dismiss="modal">
-                  <span
-                    ><i class="far fa-times-circle text-white"></i
-                  ></span>
-                </button>
-                <form class="form justify-content-center align-items-center">
-                  <div class="input-group">
-                      <input
-                      type="text"
-                      class="form-control text-white form-control-lg form-control-outline-0"
-                      placeholder="Search..."
-                    />
-                    <div class="input-group-append">
-                        <span class="input-group-text mb-3"
-                          ><a href="#"><i class="fas fa-search text-white"></i
-                            ></a></span>
-                      </div>
+      <!-- SEARCH MODAL -->
+      <div class="modal fade expand" id="searchModal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-body">
+              <button class="close search-close" data-dismiss="modal">
+                <span><i class="far fa-times-circle text-white"></i></span>
+              </button>
+              <form class="form justify-content-center align-items-center">
+                <div class="input-group">
+                  <input
+                    type="text"
+                    class="form-control text-white form-control-lg form-control-outline-0"
+                    placeholder="Search..."
+                  />
+                  <div class="input-group-append">
+                    <span class="input-group-text mb-3"
+                      ><a href="#"><i class="fas fa-search text-white"></i></a
+                    ></span>
                   </div>
-                </form>
-              </div>
+                </div>
+              </form>
             </div>
           </div>
         </div>
+      </div>
     </div>
 
     <script
@@ -534,23 +584,23 @@
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"
     ></script>
-       <!-- Slick Slider -->
-       <script
-       src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.js"
-       integrity="sha256-zUQGihTEkA4nkrgfbbAM1f3pxvnWiznBND+TuJoUv3M="
-       crossorigin="anonymous"
-     ></script>
-
-    <!-- Google Maps -->
+    <!-- Slick Slider -->
     <script
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCZUJytH0n1ll-5n7DabHcn9bwfswN56j8&callback=initMap"
-      async
-      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.js"
+      integrity="sha256-zUQGihTEkA4nkrgfbbAM1f3pxvnWiznBND+TuJoUv3M="
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Leaflet -->
+    <script
+      src="https://unpkg.com/leaflet@1.9.1/dist/leaflet.js"
+      integrity="sha256-NDI0K41gVbWqfkkaHj15IzU7PtMoelkzyKp8TOaFQ3s="
+      crossorigin=""
     ></script>
 
     <!-- AOS Library -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-   
+
     <!-- Custom JavaScript -->
     <script src="js/app.js"></script>
   </body>

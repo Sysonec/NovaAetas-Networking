@@ -1,5 +1,5 @@
 // Preloader
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
   document.querySelector(".loader-wrap").style.opacity = "0";
   document.querySelector("body").style.overflowY = "hidden";
   document.querySelector(".loader-wrap").style.visibility = "hidden";
@@ -18,11 +18,11 @@ function loaderOff() {
 // AOS Library customization
 AOS.init({
   easing: "ease-in-out",
-  once: "true"
+  once: "true",
 });
 
 // Sticky back to top button
-$(window).scroll(function() {
+$(window).scroll(function () {
   if ($(window).scrollTop() + $(window).height() > $(document).height() - 250) {
     document
       .querySelector("#btn-top")
@@ -35,11 +35,11 @@ $(window).scroll(function() {
 });
 
 // Navbar elements collapsing on click
-$(document).ready(function() {
-  $("body").click(function() {
+$(document).ready(function () {
+  $("body").click(function () {
     $(".collapse").collapse("hide");
   });
-  $(".collapse-search, .slick-dots-custom, .card-item-image").click(function(
+  $(".collapse-search, .slick-dots-custom, .card-item-image").click(function (
     e
   ) {
     e.stopPropagation();
@@ -47,7 +47,7 @@ $(document).ready(function() {
 });
 
 // Smooth Scrolling
-$("#main-nav a, .smooth").on("click", function(event) {
+$("#main-nav a, .smooth").on("click", function (event) {
   if (this.hash !== "") {
     event.preventDefault();
 
@@ -55,10 +55,10 @@ $("#main-nav a, .smooth").on("click", function(event) {
 
     $("html, body").animate(
       {
-        scrollTop: $(hash).offset().top
+        scrollTop: $(hash).offset().top,
       },
       800,
-      function() {
+      function () {
         window.location.hash = hash;
       }
     );
@@ -70,25 +70,25 @@ $("#year").text(new Date().getFullYear());
 
 // Slider Config
 $("carousel").carousel({
-  interval: 5000
+  interval: 5000,
 });
 
 // Customizing slick slide dots
-$(".slider, .team-slider, .card-item-slider").on("init", function(
-  event,
-  slick
-) {
-  var $items = slick.$dots.find("li");
-  $items.addClass("slick-dots-custom");
-  $items.find("button").remove();
-});
+$(".slider, .team-slider, .card-item-slider").on(
+  "init",
+  function (event, slick) {
+    var $items = slick.$dots.find("li");
+    $items.addClass("slick-dots-custom");
+    $items.find("button").remove();
+  }
+);
 
 $(".card-item-slider").slick({
   infinite: true,
   autoplay: true,
   autoplayspeed: 6000,
   dots: true,
-  arrows: false
+  arrows: false,
 });
 
 // Slick slider config
@@ -99,7 +99,7 @@ $(".slider").slick({
   autoplay: true,
   autoplayspeed: 6000,
   dots: true,
-  arrows: false
+  arrows: false,
 });
 
 // Team Slider
@@ -111,7 +111,7 @@ $(".team-slider").slick({
   responsive: [
     {
       breakpoint: 4000,
-      settings: "unslick"
+      settings: "unslick",
     },
     {
       breakpoint: 850,
@@ -119,8 +119,8 @@ $(".team-slider").slick({
         slidesToShow: 3,
         slidesToScroll: 1,
         infinite: true,
-        dots: true
-      }
+        dots: true,
+      },
     },
     {
       breakpoint: 700,
@@ -128,8 +128,8 @@ $(".team-slider").slick({
         slidesToShow: 2,
         slidesToScroll: 2,
         infinite: true,
-        dots: true
-      }
+        dots: true,
+      },
     },
     {
       breakpoint: 500,
@@ -137,10 +137,10 @@ $(".team-slider").slick({
         slidesToShow: 1,
         slidesToScroll: 1,
         infinite: true,
-        dots: true
-      }
-    }
-  ]
+        dots: true,
+      },
+    },
+  ],
 });
 
 // Google Maps
@@ -148,7 +148,7 @@ function initMap() {
   // Map options
   var options = {
     zoom: 13,
-    center: { lat: 51.50986, lng: -0.118092 }
+    center: { lat: 51.50986, lng: -0.118092 },
   };
 
   // New map
@@ -157,6 +157,16 @@ function initMap() {
   //Add Marker
   var marker = new google.maps.Marker({
     position: { lat: 51.508641, lng: -0.131719 },
-    map: map
+    map: map,
   });
 }
+
+// Leaflet map
+const map = L.map("map").setView([51.50826, -0.46633], 13);
+
+L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
+  attribution:
+    '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+}).addTo(map);
+
+L.marker([51.50826, -0.46633]).addTo(map).bindPopup("We are here!").openPopup();
