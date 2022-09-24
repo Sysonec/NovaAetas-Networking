@@ -143,24 +143,6 @@ $(".team-slider").slick({
   ],
 });
 
-// Google Maps
-function initMap() {
-  // Map options
-  var options = {
-    zoom: 13,
-    center: { lat: 51.50986, lng: -0.118092 },
-  };
-
-  // New map
-  var map = new google.maps.Map(document.getElementById("map"), options);
-
-  //Add Marker
-  var marker = new google.maps.Marker({
-    position: { lat: 51.508641, lng: -0.131719 },
-    map: map,
-  });
-}
-
 // Leaflet map
 const map = L.map("map").setView([51.50826, -0.46633], 13);
 
